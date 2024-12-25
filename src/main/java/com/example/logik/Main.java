@@ -1,9 +1,7 @@
 package com.example.logik;
 
-import com.example.logik.controller.LogikController;
 import com.example.logik.model.LogikModel;
-import com.example.logik.model.Color;
-import com.example.logik.model.LogikModel;
+import com.example.logik.model.Colors;
 import com.example.logik.model.Result;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -26,14 +24,16 @@ public class Main extends Application {
 
     public static void main(String[] args) {
         launch();
+
+        //! REMOVE
         LogikModel model = new LogikModel();
 
-        ArrayList<Color> guess = new ArrayList<>();
-        guess.add(Color.RED);
-        guess.add(Color.BLUE);
-        guess.add(Color.GREEN);
-        guess.add(Color.YELLOW);
-        guess.add(Color.PURPLE);
+        ArrayList<Colors> guess = new ArrayList<>();
+        guess.add(Colors.RED);
+        guess.add(Colors.BLUE);
+        guess.add(Colors.GREEN);
+        guess.add(Colors.YELLOW);
+        guess.add(Colors.PURPLE);
 
         Result result = model.evaluateGuess(guess);
 

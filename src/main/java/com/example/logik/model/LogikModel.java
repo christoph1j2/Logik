@@ -1,22 +1,32 @@
 package com.example.logik.model;
 
+import javafx.scene.paint.Color;
+
 import java.util.ArrayList;
 import java.util.Random;
 
 public class LogikModel {
     private Random rd = new Random();
-    ArrayList<Color> solution = new ArrayList<Color>();
+    ArrayList<Colors> solution = new ArrayList<Colors>();
     //ArrayList<Color> guess = new ArrayList<Color>();
 
     private void generateSolution() {
         while(solution.size() < 5) {
-            Color newColor = Color.values()[rd.nextInt(Color.values().length)];
+            Colors newColor = Colors.values()[rd.nextInt(Colors.values().length)];
             solution.add(newColor);
         }
         System.out.println(solution);
     }
 
-    public Result evaluateGuess(ArrayList<Color> guess) {
+    public ArrayList<Colors> getSolution() {
+        return solution;
+    }
+
+    public int maxGuesses() {
+        return 10;
+    }
+
+    public Result evaluateGuess(ArrayList<Colors> guess) {
         int blackPins = 0;
         int whitePins = 0;
 

@@ -1,6 +1,6 @@
 package com.example.logik.model;
 
-public enum Color {
+public enum Colors {
     RED,
     GREEN,
     BLUE,

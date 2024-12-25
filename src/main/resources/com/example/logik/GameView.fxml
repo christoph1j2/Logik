@@ -13,7 +13,7 @@
 
 <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="490.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.logik.controller.LogikController">
    <children>
-      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="40.0" prefWidth="801.0" text="Logik">
+      <Label fx:id="heading" alignment="CENTER" contentDisplay="CENTER" prefHeight="40.0" prefWidth="801.0" text="Logik">
          <font>
             <Font size="25.0" />
          </font>
@@ -32,18 +32,18 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" />
-                  <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="2" />
-                  <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="3" />
-                  <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="4" />
+                  <Circle fx:id="s1" fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="s2" fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" />
+                  <Circle fx:id="s3" fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="2" />
+                  <Circle fx:id="s4" fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="3" />
+                  <Circle fx:id="s5" fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="4" />
                </children>
             </GridPane>
             <Line endY="150.0" startY="50.0" />
             <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
                <children>
-                  <Button mnemonicParsing="false" text="Show Result" />
-                  <Button mnemonicParsing="false" text="reset" />
+                  <Button fx:id="showResultButton" mnemonicParsing="false" onAction="#handleShowResults" text="Show Result" />
+                  <Button fx:id="resetButton" mnemonicParsing="false" onAction="#handleReset" text="reset" />
                </children>
             </HBox>
          </children>
@@ -319,14 +319,14 @@
                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                </rowConstraints>
                <children>
-                  <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" />
-                  <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="2" />
-                  <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="3" />
-                  <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="4" />
+                  <Circle fx:id="c1" fill="WHITE" onMouseClicked="#handleCircleClick" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="c2" fill="WHITE" onMouseClicked="#handleCircleClick" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" />
+                  <Circle fx:id="c3" fill="WHITE" onMouseClicked="#handleCircleClick" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="2" />
+                  <Circle fx:id="c4" fill="WHITE" onMouseClicked="#handleCircleClick" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="3" />
+                  <Circle fx:id="c5" fill="WHITE" onMouseClicked="#handleCircleClick" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="4" />
                </children>
             </GridPane>
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" text="Guess" />
+            <Button fx:id="guessButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleGuess" text="Guess" />
          </children>
       </VBox>
    </children>
