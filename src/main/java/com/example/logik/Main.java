@@ -1,11 +1,17 @@
 package com.example.logik;
 
+import com.example.logik.controller.LogikController;
+import com.example.logik.model.LogikModel;
+import com.example.logik.model.Color;
+import com.example.logik.model.LogikModel;
+import com.example.logik.model.Result;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 public class Main extends Application {
     @Override
@@ -20,5 +26,17 @@ public class Main extends Application {
 
     public static void main(String[] args) {
         launch();
+        LogikModel model = new LogikModel();
+
+        ArrayList<Color> guess = new ArrayList<>();
+        guess.add(Color.RED);
+        guess.add(Color.BLUE);
+        guess.add(Color.GREEN);
+        guess.add(Color.YELLOW);
+        guess.add(Color.PURPLE);
+
+        Result result = model.evaluateGuess(guess);
+
+        System.out.println(result);
     }
 }

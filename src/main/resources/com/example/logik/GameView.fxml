@@ -35,8 +35,8 @@
                   <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
                   <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" />
                   <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="2" />
-                  <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="4" />
                   <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="3" />
+                  <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="4" />
                </children>
             </GridPane>
             <Line endY="150.0" startY="50.0" />
@@ -53,52 +53,7 @@
          <children>
             <VBox prefHeight="200.0" prefWidth="398.0">
                <children>
-                  <GridPane prefHeight="100.0" prefWidth="400.0">
-                     <columnConstraints>
-                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                     </columnConstraints>
-                     <rowConstraints>
-                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                     </rowConstraints>
-                     <children>
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="2" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="3" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="4" />
-                     </children>
-                  </GridPane>
-                  <GridPane alignment="CENTER" prefHeight="100.0" prefWidth="400.0">
-                     <columnConstraints>
-                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                     </columnConstraints>
-                     <rowConstraints>
-                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                     </rowConstraints>
-                     <children>
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="2" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="3" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="4" />
-                     </children>
-                  </GridPane>
-                  <GridPane alignment="CENTER" prefHeight="100.0" prefWidth="400.0">
-                     <children>
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="2" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="3" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="4" />
-                     </children>
+                  <GridPane fx:id="g1" prefHeight="100.0" prefWidth="400.0">
                      <columnConstraints>
                         <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                         <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -110,14 +65,7 @@
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                      </rowConstraints>
                   </GridPane>
-                  <GridPane alignment="CENTER" prefHeight="100.0" prefWidth="400.0">
-                     <children>
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="2" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="3" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="4" />
-                     </children>
+                  <GridPane fx:id="g2" alignment="CENTER" prefHeight="100.0" prefWidth="400.0">
                      <columnConstraints>
                         <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                         <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -129,14 +77,7 @@
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                      </rowConstraints>
                   </GridPane>
-                  <GridPane alignment="CENTER" prefHeight="100.0" prefWidth="400.0">
-                     <children>
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="2" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="3" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="4" />
-                     </children>
+                  <GridPane fx:id="g3" alignment="CENTER" prefHeight="100.0" prefWidth="400.0">
                      <columnConstraints>
                         <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                         <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -148,14 +89,7 @@
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                      </rowConstraints>
                   </GridPane>
-                  <GridPane alignment="CENTER" prefHeight="100.0" prefWidth="400.0">
-                     <children>
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="2" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="3" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="4" />
-                     </children>
+                  <GridPane fx:id="g4" alignment="CENTER" prefHeight="100.0" prefWidth="400.0">
                      <columnConstraints>
                         <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                         <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -167,14 +101,7 @@
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                      </rowConstraints>
                   </GridPane>
-                  <GridPane alignment="CENTER" prefHeight="100.0" prefWidth="400.0">
-                     <children>
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="2" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="3" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="4" />
-                     </children>
+                  <GridPane fx:id="g5" alignment="CENTER" prefHeight="100.0" prefWidth="400.0">
                      <columnConstraints>
                         <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                         <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -186,14 +113,7 @@
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                      </rowConstraints>
                   </GridPane>
-                  <GridPane alignment="CENTER" prefHeight="100.0" prefWidth="400.0">
-                     <children>
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="2" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="3" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="4" />
-                     </children>
+                  <GridPane fx:id="g6" alignment="CENTER" prefHeight="100.0" prefWidth="400.0">
                      <columnConstraints>
                         <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                         <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -205,14 +125,7 @@
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                      </rowConstraints>
                   </GridPane>
-                  <GridPane alignment="CENTER" prefHeight="100.0" prefWidth="400.0">
-                     <children>
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="2" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="3" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="4" />
-                     </children>
+                  <GridPane fx:id="g7" alignment="CENTER" prefHeight="100.0" prefWidth="400.0">
                      <columnConstraints>
                         <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                         <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -224,14 +137,31 @@
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                      </rowConstraints>
                   </GridPane>
-                  <GridPane alignment="CENTER" prefHeight="100.0" prefWidth="400.0">
-                     <children>
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="2" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="3" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="4" />
-                     </children>
+                  <GridPane fx:id="g8" alignment="CENTER" prefHeight="100.0" prefWidth="400.0">
+                     <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+                  <GridPane fx:id="g9" alignment="CENTER" prefHeight="100.0" prefWidth="400.0">
+                     <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+                  <GridPane fx:id="g10" alignment="CENTER" prefHeight="100.0" prefWidth="400.0">
                      <columnConstraints>
                         <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                         <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -251,33 +181,7 @@
             <Line endY="250.0" />
             <VBox prefHeight="200.0" prefWidth="402.0">
                <children>
-                  <GridPane prefHeight="100.0" prefWidth="400.0">
-                     <columnConstraints>
-                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                     </columnConstraints>
-                     <rowConstraints>
-                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                     </rowConstraints>
-                     <children>
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" GridPane.columnIndex="1" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" GridPane.columnIndex="2" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" GridPane.columnIndex="3" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" GridPane.columnIndex="4" />
-                     </children>
-                  </GridPane>
-                  <GridPane prefHeight="100.0" prefWidth="400.0">
-                     <children>
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" GridPane.columnIndex="1" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" GridPane.columnIndex="2" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" GridPane.columnIndex="3" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" GridPane.columnIndex="4" />
-                     </children>
+                  <GridPane fx:id="e1" prefHeight="100.0" prefWidth="400.0">
                      <columnConstraints>
                         <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                         <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -289,14 +193,7 @@
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                      </rowConstraints>
                   </GridPane>
-                  <GridPane prefHeight="100.0" prefWidth="400.0">
-                     <children>
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" GridPane.columnIndex="1" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" GridPane.columnIndex="2" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" GridPane.columnIndex="3" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" GridPane.columnIndex="4" />
-                     </children>
+                  <GridPane fx:id="e2" prefHeight="100.0" prefWidth="400.0">
                      <columnConstraints>
                         <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                         <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -308,14 +205,7 @@
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                      </rowConstraints>
                   </GridPane>
-                  <GridPane prefHeight="100.0" prefWidth="400.0">
-                     <children>
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" GridPane.columnIndex="1" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" GridPane.columnIndex="2" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" GridPane.columnIndex="3" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" GridPane.columnIndex="4" />
-                     </children>
+                  <GridPane fx:id="e3" prefHeight="100.0" prefWidth="400.0">
                      <columnConstraints>
                         <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                         <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -327,14 +217,7 @@
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                      </rowConstraints>
                   </GridPane>
-                  <GridPane prefHeight="100.0" prefWidth="400.0">
-                     <children>
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" GridPane.columnIndex="1" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" GridPane.columnIndex="2" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" GridPane.columnIndex="3" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" GridPane.columnIndex="4" />
-                     </children>
+                  <GridPane fx:id="e4" prefHeight="100.0" prefWidth="400.0">
                      <columnConstraints>
                         <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                         <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -346,14 +229,7 @@
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                      </rowConstraints>
                   </GridPane>
-                  <GridPane prefHeight="100.0" prefWidth="400.0">
-                     <children>
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" GridPane.columnIndex="1" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" GridPane.columnIndex="2" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" GridPane.columnIndex="3" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" GridPane.columnIndex="4" />
-                     </children>
+                  <GridPane fx:id="e5" prefHeight="100.0" prefWidth="400.0">
                      <columnConstraints>
                         <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                         <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -365,14 +241,7 @@
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                      </rowConstraints>
                   </GridPane>
-                  <GridPane prefHeight="100.0" prefWidth="400.0">
-                     <children>
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" GridPane.columnIndex="1" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" GridPane.columnIndex="2" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" GridPane.columnIndex="3" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" GridPane.columnIndex="4" />
-                     </children>
+                  <GridPane fx:id="e6" prefHeight="100.0" prefWidth="400.0">
                      <columnConstraints>
                         <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                         <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -384,14 +253,7 @@
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                      </rowConstraints>
                   </GridPane>
-                  <GridPane prefHeight="100.0" prefWidth="400.0">
-                     <children>
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" GridPane.columnIndex="1" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" GridPane.columnIndex="2" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" GridPane.columnIndex="3" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" GridPane.columnIndex="4" />
-                     </children>
+                  <GridPane fx:id="e7" prefHeight="100.0" prefWidth="400.0">
                      <columnConstraints>
                         <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                         <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -403,14 +265,7 @@
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                      </rowConstraints>
                   </GridPane>
-                  <GridPane prefHeight="100.0" prefWidth="400.0">
-                     <children>
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" GridPane.columnIndex="1" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" GridPane.columnIndex="2" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" GridPane.columnIndex="3" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" GridPane.columnIndex="4" />
-                     </children>
+                  <GridPane fx:id="e8" prefHeight="100.0" prefWidth="400.0">
                      <columnConstraints>
                         <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                         <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -422,14 +277,19 @@
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                      </rowConstraints>
                   </GridPane>
-                  <GridPane prefHeight="100.0" prefWidth="400.0">
-                     <children>
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" GridPane.columnIndex="1" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" GridPane.columnIndex="2" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" GridPane.columnIndex="3" />
-                        <Circle fill="WHITE" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" GridPane.columnIndex="4" />
-                     </children>
+                  <GridPane fx:id="e9" prefHeight="100.0" prefWidth="400.0">
+                     <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+                  <GridPane fx:id="e10" prefHeight="100.0" prefWidth="400.0">
                      <columnConstraints>
                         <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                         <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
