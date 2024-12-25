@@ -133,7 +133,8 @@ public class LogikController {
                     heading.setText("Vyhrál jsi!");
                     showResultButton.setDisable(true);
                     guessButton.setDisable(true);
-                    handleShowResults();
+                    //handleShowResults();
+                    showResults();
                 }
 
                 break;
@@ -145,7 +146,8 @@ public class LogikController {
             heading.setText("Prohrál jsi!");
             showResultButton.setDisable(true);
             guessButton.setDisable(true);
-            handleShowResults();
+            //handleShowResults();
+            showResults();
         }
     }
 
@@ -190,19 +192,35 @@ public class LogikController {
         }
     }
 
+//    @FXML
+//    protected void handleShowResults() {
+//        ArrayList<Colors> solution = logikModel.getSolution();
+//        resultClickCount++;
+//        if (resultClickCount % 2 == 1) {
+//            for (int i = 0; i < solution.size(); i++) {
+//                solutionCircles[i].setFill(Color.valueOf(solution.get(i).toString()));
+//            }
+//        }
+//        else if (resultClickCount % 2 == 0) {
+//            for (int i = 0; i < solution.size(); i++) {
+//                solutionCircles[i].setFill(Color.WHITE);
+//            }
+//        }
+//    }
+
     @FXML
-    protected void handleShowResults() {
+    protected void showResults() {
         ArrayList<Colors> solution = logikModel.getSolution();
-        resultClickCount++;
-        if (resultClickCount % 2 == 1) {
-            for (int i = 0; i < solution.size(); i++) {
-                solutionCircles[i].setFill(Color.valueOf(solution.get(i).toString()));
-            }
+        for (int i = 0; i < solution.size(); i++) {
+            solutionCircles[i].setFill(Color.valueOf(solution.get(i).toString()));
         }
-        else if (resultClickCount % 2 == 0) {
-            for (int i = 0; i < solution.size(); i++) {
-                solutionCircles[i].setFill(Color.WHITE);
-            }
+    }
+
+    @FXML
+    protected void hideResults() {
+        ArrayList<Colors> solution = logikModel.getSolution();
+        for (int i = 0; i < solution.size(); i++) {
+            solutionCircles[i].setFill(Color.WHITE);
         }
     }
 

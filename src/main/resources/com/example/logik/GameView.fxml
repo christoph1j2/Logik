@@ -42,7 +42,7 @@
             <Line endY="150.0" startY="50.0" />
             <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
                <children>
-                  <Button fx:id="showResultButton" mnemonicParsing="false" onAction="#handleShowResults" text="Show Result" />
+                  <Button fx:id="showResultButton" mnemonicParsing="false" onMousePressed="#showResults" onMouseReleased="#hideResults" text="Show Result" />
                   <Button fx:id="resetButton" mnemonicParsing="false" onAction="#handleReset" text="reset" />
                </children>
             </HBox>

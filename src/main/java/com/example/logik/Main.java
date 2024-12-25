@@ -25,18 +25,17 @@ public class Main extends Application {
     public static void main(String[] args) {
         launch();
 
-        //! REMOVE
-        LogikModel model = new LogikModel();
-
-        ArrayList<Colors> guess = new ArrayList<>();
-        guess.add(Colors.RED);
-        guess.add(Colors.BLUE);
-        guess.add(Colors.GREEN);
-        guess.add(Colors.YELLOW);
-        guess.add(Colors.PURPLE);
-
-        Result result = model.evaluateGuess(guess);
-
-        System.out.println(result);
+//        LogikModel model = new LogikModel();
+//
+//        ArrayList<Colors> guess = new ArrayList<>();
+//        guess.add(Colors.RED);
+//        guess.add(Colors.BLUE);
+//        guess.add(Colors.GREEN);
+//        guess.add(Colors.YELLOW);
+//        guess.add(Colors.PURPLE);
+//
+//        Result result = model.evaluateGuess(guess);
+//
+//        System.out.println(result);
     }
 }
