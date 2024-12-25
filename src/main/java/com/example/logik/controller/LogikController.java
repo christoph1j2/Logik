@@ -32,6 +32,11 @@ public class LogikController {
     private ArrayList<Color> solutionColors = new ArrayList<>();
     private int resultClickCount;
     private int guessCount;
+    /**
+     * Inicializuje hru
+     * Specialni metoda v JavaFX, ktera je zavolana, kdyz se zobrazuje okynko
+     * Nastavi hru a vzhled
+    **/
     @FXML
     void initialize() {
         heading.setText("Logik");
@@ -73,6 +78,11 @@ public class LogikController {
 
     }
 
+    /**
+     * Reaguje na kliknuti na kolecko.
+     * Zmeni barvu kolecka na dalsi v seznamu barev.
+     * @param mouseEvent udalost kliknuti
+     */
     @FXML
     protected void handleCircleClick(MouseEvent mouseEvent) {
         Circle circle = (Circle) mouseEvent.getSource();
@@ -85,6 +95,11 @@ public class LogikController {
         }
     }
 
+        /**
+         * Zpracuje guess, vyhodnoti odhad a zobrazi vysledek.
+         * Pokud vyhral, zakaze tlacitka a zobrazi reseni.
+         * Pokud prohral, zakaze tlacitka a zobrazi reseni.
+         */
     @FXML
     protected void handleGuess(){
         int maxGuesses = logikModel.maxGuesses();
@@ -151,6 +166,12 @@ public class LogikController {
         }
     }
 
+    /**
+     * Resetuje hru, nastavi nazev hlavniho textu na "Logik", vygeneruje nove reseni,
+     * vynuluje pocet kliknuti na tlacitko "zobrazit vysledek" a pocet pokusu,
+     * schova vsechny kolecka v gridpanech pro pozice a vynuluje barvy vsech kruhu na bile.
+     * Nastavi tlacitka tak, aby byla vsechna tlacitka aktivni.
+     */
     @FXML
     protected void handleReset(){
         heading.setText("Logik");
@@ -208,6 +229,11 @@ public class LogikController {
 //        }
 //    }
 
+/**
+ * Ukaze reseni nastavenim jednotlivych kolecek
+ * specifickymi barvami vygenerovane v modelu v solution.
+ */
+
     @FXML
     protected void showResults() {
         ArrayList<Colors> solution = logikModel.getSolution();
@@ -216,6 +242,9 @@ public class LogikController {
         }
     }
 
+    /**
+     * Skryje reseni hry nastavenim jednotlivych kolecek na bilou barvu.
+     */
     @FXML
     protected void hideResults() {
         ArrayList<Colors> solution = logikModel.getSolution();
@@ -223,6 +252,14 @@ public class LogikController {
             solutionCircles[i].setFill(Color.WHITE);
         }
     }
+
+/**
+ * Prevede JavaFX barvu na specifickou barvu v Colors enum
+ * 
+ * @param color JavaFX barva k prevedeni
+ * @return korespondujici barva v Colors enum
+ * @throws IllegalArgumentException pokud barva neni rozeznana
+ */
 
     private Colors getColorEnum(Color color) {
         if (color.equals(Color.RED)) return Colors.RED;
